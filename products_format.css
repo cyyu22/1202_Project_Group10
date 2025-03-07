@@ -1,0 +1,6 @@
+td {padding:10px; border-right:1px solid black; text-align: center;}
+th {background-color: whitesmoke;}
+tr {border-bottom:1px solid black;background-color: lightgray;}
+caption {font-size: 18px; font-weight: bold;}
+p #desc {font-size: 20px;font-weight: bold;}
+table {border: solid 2px black}
