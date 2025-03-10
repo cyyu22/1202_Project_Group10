@@ -60,3 +60,52 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+    nav a {
+        font-size: 14px;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
