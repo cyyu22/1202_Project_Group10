@@ -2,7 +2,7 @@ const form = document.getElementById("activityForm");
 const log = document.getElementById("activityLog");
 const filterType = document.getElementById("filterType");
 const filterImpact = document.getElementById("filterImpact");
-const successMsg = document.getElementById("successMsg"); // ✅ Add this in HTML if missing
+const successMsg = document.getElementById("successMsg");
 
 let activities = [];
 
@@ -48,7 +48,7 @@ function renderLog() {
 
   filtered.forEach((a) => {
     const div = document.createElement("div");
-    div.className = "activity-entry"; // consider changing to "activity-card" if using that style
+    div.className = "activity-entry";
     div.innerHTML = `
       <strong>${a.date} — ${a.type}</strong><br/>
       <em>${a.impact}</em><br/>
