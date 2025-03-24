@@ -1,57 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habit and Management</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Eco Habits Guide</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Domestic Eco living</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="charity.html">Charity</a>
-            <a href="habit.html">Habit and Management</a>
-            <a href="products.html">Products</a>
-            <a href="statistics.html">Statistics</a>
-            <a href="contact.html">Contact</a>
-            <a href="tracker.html">Tracker</a>
-        </nav>
-    </header>
-    <main>
-        <section id="sub-pages">
-            <h2>More on Habits</h2>
-            <nav>
-                <a href="habit-tips.html">Habit Tips</a>
-                <a href="habit-resources.html">Habit Resources</a>
-            </nav>
-        </section>
-        <section id="electricity">
-            <h2>Electricity</h2>
-            <div>Electricity is one of the most common energy sources in our daily life. 
-                We should start from this first.
-            </div>
-            <div>Here are some tips to save electricity:</div>
-            <ul>
-                <li>Turn off lights when you leave the room.</li>
-                <li>Unplug electronics when not in use.</li>
-                <li>Set the A/C to 24°C - 26°C.</li>
-                <li>Switch your devices to power-saving mode.</li>
-            </ul>
 
-        </section>
-        <section id="water">
-            <h2>Water</h2>
-            <div>Reduce water usage not only reduce ecological impact but also reduce your water bills!</div>
-            <div>Here are some tips to save water:</div>
+<!-- Hero Section -->
+<header class="hero" style="background-image: url('https://images.unsplash.com/photo-1470115636492-6d2b56f9146d');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Guide to Sustainable Living</h1>
+        <p>Choose a category to explore eco-friendly practices</p>
+    </div>
+</header>
+
+<!-- Toggle Button -->
+<div class="toggle-wrapper">
+    <button id="toggleBtn" class="toggle-btn">Show Product Substitutes</button>
+</div>
+
+<!-- Habit Cards -->
+<section id="habitCards" class="categories">
+    <a href="electricity.html" class="card">
+        <div class="icon">⚡</div>
+        <h3>Electricity</h3>
+        <p>Learn how to reduce your energy consumption with efficient practices and technologies.</p>
+    </a>
+
+    <a href="water.html" class="card">
+        <div class="icon">💧</div>
+        <h3>Water</h3>
+        <p>Discover conservation methods to save water and reduce household use.</p>
+    </a>
+
+    <a href="food.html" class="card">
+        <div class="icon">🥦</div>
+        <h3>Food</h3>
+        <p>Explore sustainable food habits to reduce waste and support the planet.</p>
+    </a>
+  </section>
+
+<!-- Substitute Cards (Hidden by Default) -->
+<section id="substituteCards" class="categories" style="display: none;">
+    <a href="alter.html" class="card">
+        <div class="icon">♻️</div>
+        <h3>Alternatives</h3>
+        <p>Eco-friendly swaps for common disposables like bags, wraps, and bottles.</p>
+    </a>
+
+    <a href="appliance.html" class="card">
+        <div class="icon">🔌</div>
+        <h3>Appliance</h3>
+        <p>Energy-saving appliances that reduce emissions and conserve electricity.</p>
+    </a>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>About Us</h3>
+            <p>We're dedicated to promoting sustainable living practices and helping people make eco-friendly choices in their daily lives.</p>
+            <blockquote>"Small Actions, Big Impact: Together for a Greener Tomorrow"</blockquote>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
             <ul>
-                <li>Turn off the tap while you are not using.</li>
-                <li>Fix any leaks in your home.</li>
-                <li>Use shower instead of bath tube.</li>
-                <li>Reduce the shower times. Keep it within 10 mins ideally.</li>
-                <li>Use a dishwasher instead of washing dishes by hand.</li>
-            <ul>
-    </main>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="habit-guide.html">Eco Habits Guide</a></li>
+                <li><a href="eco-tracker.html">Eco Tracker</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Eco Living. All rights reserved.<br />
+            Assets and images from 
+            <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>, 
+            <a href="https://www.svgrepo.com/" target="_blank" rel="noopener noreferrer">SVG Repo</a>, and 
+            <a href="https://www.reshot.com/" target="_blank" rel="noopener noreferrer">Reshot</a>.
+        </div>
+  </footer>
+
+  <!-- JS -->
+    <script src="toggle.js"></script>
 </body>
 </html>
