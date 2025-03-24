@@ -1,37 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Get in Touch</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="charity.html">Charity</a>
-            <a href="habit.html">Habit and Management</a>
-            <a href="products.html">Products</a>
-            <a href="statistics.html">Statistics</a>
-            <a href="contact.html">Contact</a>
-            <a href="tracker.html">Tracker</a>
-        </nav>
-    </header>
-    <main>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
+  <!-- Hero Section -->
+  <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>Get in touch with our team for any inquiries or support</p>
+    </div>
+  </header>
 
-            <button type="submit">Send</button>
-        </form>
-    </main>
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- Contact Section -->
+  <section class="tracker">
+    <!-- Location Info -->
+    <div class="tracker-form">
+      <h2>Our Location</h2>
+      <div class="contact-card">
+        <h3>📍 Address</h3>
+        <p>
+          1 University Blvd.,<br>
+          Markham<br>
+          Canada ON L6G 0A1
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="tracker-form">
+      <h2>Send us a Message</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+      <span id="errorMsg" style="color: red;"></span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>
+          We're dedicated to promoting sustainable living practices and helping people make eco-friendly choices in their daily lives.
+        </p>
+        <blockquote>
+          "Small Actions, Big Impact: Together for a Greener Tomorrow"
+        </blockquote>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="habit-guide.html">Eco Habits Guide</a></li>
+            <li><a href="eco-tracker.html">Eco Tracker</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+        © 2024 Eco Living. All rights reserved.<br />
+        Assets and images from 
+        <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>, 
+        <a href="https://www.svgrepo.com/" target="_blank" rel="noopener noreferrer">SVG Repo</a>, and 
+        <a href="https://www.reshot.com/" target="_blank" rel="noopener noreferrer">Reshot</a>.
+    </div>
+  </footer>
+
+  <!-- (Optional) Script -->
+  <script src="validation.js"></script>
+
 </body>
 </html>
