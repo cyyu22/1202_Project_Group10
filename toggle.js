@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const habitCards = document.getElementById('habitCards');
     const substituteCards = document.getElementById('substituteCards');
   
-    // ========== TOGGLE FUNCTION ==========
+    // ========== Toggle Function ==========
     function toggleSections(showHabits) {
       habitCards.style.display = showHabits ? 'flex' : 'none';
       substituteCards.style.display = showHabits ? 'none' : 'flex';
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         : 'Show Habit Guide';
     }
   
-    // ========== MANUAL TOGGLE BUTTON ==========
+    // ========== Manual toggle button ==========
     if (toggleBtn) {
       toggleBtn.addEventListener('click', () => {
         const showingHabits = habitCards.style.display !== 'none';
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    // ========== HOTKEY (E) TOGGLE ==========
+    // ========== Implement hotkey (E) to toggle ==========
     document.addEventListener('keydown', (e) => {
       if (e.key === 'e' || e.key === 'E') {
         const showingHabits = habitCards.style.display !== 'none';
@@ -31,17 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-    // ========== AUTO HIGHLIGHT CARDS (Optional visual feedback) ==========
-    const cards = document.querySelectorAll('.card');
-    let activeIndex = 0;
-  
-    setInterval(() => {
-      cards.forEach(card => card.classList.remove('highlight'));
-      cards[activeIndex].classList.add('highlight');
-      activeIndex = (activeIndex + 1) % cards.length;
-    }, 4000);
-  
-    // ========== MOUSE EFFECTS FOR CARDS ==========
+    // ========== MMouse effect ==========
     cards.forEach(card => {
       card.addEventListener('mouseover', () => {
         card.style.backgroundColor = '#e6ffe6';
@@ -56,22 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-    // ========== SMOOTH SCROLL BUTTON (Optional) ==========
-    const scrollBtn = document.getElementById('scrollBtn');
-    const targetSection = document.getElementById('contactForm');
-  
-    if (scrollBtn && targetSection) {
-      scrollBtn.addEventListener('click', () => {
-        window.scrollTo({
-          top: targetSection.offsetTop,
-          behavior: 'smooth'
-        });
-      });
-    }
-  
-    // ========== AUTO TOGGLE ON IDLE ==========
+    // ========== Auto toggle when idle ==========
     let idleTime = 0;
-    const idleLimit = 10; // seconds
+    const idleLimit = 10;
     let currentMode = 'habit';
   
     const autoToggle = () => {
@@ -94,12 +71,5 @@ document.addEventListener('DOMContentLoaded', () => {
       document.addEventListener(event, resetIdle)
     );
   
-    setInterval(autoToggle, 1000); // check every second
-  
-    // ========== OPTIONAL: Mouse Button Logging ==========
-    document.addEventListener('mousedown', (e) => {
-      const buttons = ['Left Click', 'Middle Click', 'Right Click'];
-      console.log('Mouse button:', buttons[e.button] || 'Unknown');
-    });
-  });
+    setInterval(autoToggle, 1000);
   
