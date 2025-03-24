@@ -83,7 +83,7 @@
     background-color: #f0fdf4;
   }
   
-  /* Footer Section */
+  /* Footer */
   .footer {
     background-color: #065f46;
     color: #d1fae5;
@@ -146,7 +146,7 @@
   }
 
   .footer-bottom a {
-    color: #bbf7d0; /* soft green to match your theme */
+    color: #bbf7d0;
     text-decoration: underline;
   }
   
@@ -154,7 +154,6 @@
     color: #ffffff;
   }
   
-  /* Hero modifications */
 .small-hero {
     height: 400px;
     background: url('https://images.unsplash.com/photo-1627308595229-7830a5c91f9f') no-repeat center center/cover;
@@ -164,7 +163,7 @@
     text-align: left;
   }
   
-  /* Categories Section */
+  /* Habit-guide categories*/
   .categories {
     background-color: #f0fdf4;
     padding: 4rem 2rem;
@@ -214,7 +213,8 @@
     align-items: center;
     justify-content: center;
   }
-  
+
+  /* Eco-tracker */
   .tracker {
     background-color: #f0fdf4;
     padding: 4rem 2rem;
@@ -289,7 +289,7 @@
     border-radius: 0.5rem;
   }
   
-  /*contact-styling*/
+  /* Contact */
   .contact-card {
     background-color: #ffffff;
     border-radius: 1rem;
@@ -302,7 +302,7 @@
     margin-bottom: 0.5rem;
   }
   
-  /*toggle button*/
+  /* Toggle button */
   .toggle-container {
     text-align: center;
     margin: 2rem 0 1rem;
