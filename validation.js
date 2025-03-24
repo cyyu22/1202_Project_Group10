@@ -5,34 +5,33 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
   
-      // ✅ Get values
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
       const phone = document.getElementById('phone').value.trim();
       const message = document.getElementById('message').value.trim();
   
-      // ✅ Email format check
+      // Email format check
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       
-      // ✅ Canadian phone number format + length
+      // Canadian phone number format + length
       const phoneRegex = /^(\+1\s?)?(\(?\d{3}\)?[\s\-]?)\d{3}[\s\-]?\d{4}$/;
       const phoneDigits = phone.replace(/\D/g, '');
   
-      // ✅ Validate required fields
+      // Validate required fields
       if (!name || !email || !message) {
         errorMsg.style.color = 'red';
         errorMsg.textContent = 'Please fill in all required fields.';
         return;
       }
   
-      // ✅ Validate email
+      // Validate email
       if (!emailRegex.test(email)) {
         errorMsg.style.color = 'red';
         errorMsg.textContent = 'Please enter a valid email address.';
         return;
       }
   
-      // ✅ Validate phone number if provided
+      // Validate phone number if provided
       if (phone) {
         const phoneFormatRegex = /^(\+?1\s*[-.]?)?(\(?\d{3}\)?)[\s.-]?\d{3}[\s.-]?\d{4}$/;
       
@@ -55,11 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
   
-      // ✅ If all checks pass
+      // checks pass
       errorMsg.style.color = 'green';
       errorMsg.textContent = 'Message sent successfully!';
   
-      // ✅ Auto-hide message after 3 seconds
+      // Auto-hide message
       setTimeout(() => {
         errorMsg.textContent = '';
       }, 3000);
@@ -67,17 +66,3 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
     });
   
-    // ✅ Optional: Log keys being typed in form
-    const inputs = form.querySelectorAll('input, textarea');
-    inputs.forEach(input => {
-      input.addEventListener('keydown', (e) => {
-        console.log(`Typing in ${e.target.name || e.target.id}: ${e.key}`);
-      });
-    });
-  
-    // ✅ Optional: Mouse button logging
-    document.addEventListener('mousedown', (e) => {
-      const buttons = ['Left Click', 'Middle Click', 'Right Click'];
-      console.log('Mouse button:', buttons[e.button] || 'Unknown');
-    });
-  });
