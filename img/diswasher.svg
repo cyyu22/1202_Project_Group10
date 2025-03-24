@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47.703" height="48" viewBox="0 0 47.703 48">
+  <g>
+    <rect x="7.039" width="33.625" height="48" fill="#2ba0bf"/>
+    <rect x="7.039" width="33.625" height="5.621" fill="#525c6b"/>
+    <rect x="7.039" y="40.728" width="33.625" height="7.272" fill="#2ba0bf"/>
+    <ellipse cx="31.232" cy="19.253" rx="6.188" ry="10.993" fill="#e2e2e2"/>
+    <ellipse cx="31.232" cy="19.253" rx="3.656" ry="6.496" fill="#c6c6c6"/>
+    <ellipse cx="24.88" cy="19.253" rx="6.188" ry="10.994" fill="#7a8e9b"/>
+    <ellipse cx="23.731" cy="19.253" rx="6.188" ry="10.993" fill="#e2e2e2"/>
+    <ellipse cx="23.731" cy="19.253" rx="3.656" ry="6.496" fill="#c6c6c6"/>
+    <ellipse cx="17.379" cy="19.253" rx="6.188" ry="10.994" fill="#7a8e9b"/>
+    <ellipse cx="16.23" cy="19.253" rx="6.188" ry="10.993" fill="#e2e2e2"/>
+    <ellipse cx="16.23" cy="19.253" rx="3.656" ry="6.496" fill="#c6c6c6"/>
+    <polygon points="47.703 18.997 0 18.997 7.039 45.229 40.664 45.229 47.703 18.997" fill="#59c5ef"/>
+    <path d="M8.093,23.62a.816.816,0,0,1,.675-.354H38.935a.823.823,0,0,1,.769,1.112L39.2,25.732a.826.826,0,0,1-.769.533H9.277a.827.827,0,0,1-.769-.531L8,24.376A.811.811,0,0,1,8.093,23.62Z" fill="#2ba0bf"/>
+    <circle cx="37.104" cy="2.81" r="1.5" fill="#e2e2e2"/>
+    <circle cx="37.104" cy="2.81" r="0.75" fill="#7a8e9b"/>
+    <circle cx="31.853" cy="2.81" r="1.5" fill="#e2e2e2"/>
+    <circle cx="31.853" cy="2.81" r="0.75" fill="#7a8e9b"/>
+  </g>
+</svg>
