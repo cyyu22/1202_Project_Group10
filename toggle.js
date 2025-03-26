@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-    // ========== MMouse effect ==========
+    // ========== Mouse effect ==========
     cards.forEach(card => {
       card.addEventListener('mouseover', () => {
         card.style.backgroundColor = '#e6ffe6';
@@ -72,4 +72,4 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   
     setInterval(autoToggle, 1000);
-  
+});
